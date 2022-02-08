@@ -1,0 +1,26 @@
+@import '../../../../scss/variables.scss';
+
+.table-user__btn:hover {
+    background-color: $color_warning;
+    color: $color_white;
+}
+
+.toast{
+    position:fixed;
+    top: 35px;
+    right:15px;
+}
+
+.actions{
+    width: 200px;
+}
+
+.btn__delete:hover{
+    color: $color_white;
+    background-color: $color_error;
+}
+
+.btn__edit:hover{
+    color: $color_white;
+    background-color: $color_warning;
+}

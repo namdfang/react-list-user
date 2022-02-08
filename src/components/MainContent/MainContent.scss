@@ -1,0 +1,9 @@
+@import '../../../scss/variables.scss';
+
+.main__table{
+    background-color: $bg_table;
+    width: 100%;
+    .content__table{
+        background-color: $color_white;
+    }
+}

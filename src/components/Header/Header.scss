@@ -1,0 +1,77 @@
+@import "../../../scss/variables.scss";
+
+.main__header {
+  background-color: $bg_color_header;
+  .logo {
+    color: $color_white;
+    background-color: $color_header_hover;
+  }
+}
+
+.header__admin {
+  .sidebar--btn:hover {
+    background-color: $color_header_hover;
+  }
+  i {
+    color: $color_white;
+  }
+}
+
+.admin__active {
+  i {
+    padding: 17px 14px;
+    font-size: 14px;
+  }
+  .active > i:hover {
+    background-color: $color_header_hover;
+    cursor: pointer;
+  }
+  .active {
+    position: relative;
+    .count {
+      position: absolute;
+      font-size: 8px;
+      font-weight: 900;
+      padding: 0 3px;
+      border-radius: 2px;
+      top: 7px;
+      right: 7px;
+    }
+    .count--warning {
+      background-color: $color_warning;
+    }
+    .count--success {
+      background-color: $color_success;
+    }
+    .count--danger {
+      background-color: $color_error;
+    }
+  }
+}
+
+nav {
+  .admin__infor:hover {
+    background-color: $color_header_hover;
+    cursor: pointer;
+  }
+  .admin__infor {
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+  }
+  .admin__setting:hover {
+    background-color: $color_header_hover;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 767px) {
+  .main__header .logo {
+    width: 252px;
+  }
+  .header__admin {
+    width: calc(100% - 252px);
+  }
+}
